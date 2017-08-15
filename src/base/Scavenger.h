@@ -29,7 +29,7 @@
 #include <utility>
 #include <iostream>
 
-#ifndef WIN32
+#if (!defined WIN32 && !defined WIN64)
 #include <sys/time.h>
 #endif
 
